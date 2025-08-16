@@ -4,6 +4,8 @@
 
 此版本为寒语馨修改的UI版本，出问题概不负责
 
+如有问题去官方仓库提交https://github.com/allinssl/allinssl
+
 
 # All in SSL - SSL证书全流程管理工具 🔒
 
@@ -29,69 +31,6 @@
 
 
 
-## 🚀 快速开始
-
-### 系统要求
-- Linux 系统
-- macOS/Windows（请参照下面教程，暂不支持脚本安装）
-- Docker
-
-### 极速安装
-```bash
-curl -sSO http://download.allinssl.com/install_allinssl.sh && bash install_allinssl.sh allinssl
-```
-
-### 极速安装（备用）
-```bash
-curl -sSO https://cnb.cool/allinssl/install.sh/-/git/raw/main/install_allinssl.sh && bash install_allinssl.sh allinssl
-```
-
-### Docker安装
-```bash 
-docker run -itd \
-  --name allinssl \
-  -p 7979:8888 \
-  -v /www/allinssl/data:/www/allinssl/data \
-  -e ALLINSSL_USER=allinssl \
-  -e ALLINSSL_PWD=allinssldocker \
-  -e ALLINSSL_URL=allinssl \
-  -e TZ=Asia/Shanghai \
-  allinssl/allinssl:latest
-```
-
-### 二进制文件安装
-1. 打开 [releases 下载页面](https://github.com/allinssl/allinssl/releases)
-2. 下载最新版本的二进制文件
-3. 解压缩文件，并通过终端或者CMD进入解压目录
-4. 获取登陆地址，账号和密码
-   - 账号和登陆地址：
-    - Linux: `./allinssl 15`
-    - Windows: `.\allinssl 15`
-  - 密码：
-    - Linux: `./allinssl 6`
-    - Windows: `.\allinssl 6`
-5. 运行可执行文件启动服务，请保持终端打开，或者自行配置进程守护
-   - Linux: 执行 `./allinssl start`
-   - Windows: 终端进入到解压目录，执行 `.\allinssl start`
-6. 访问 `http://your-server-ip:port/安全入口`，使用账号和密码登录
-7. 更多命令行操作请参考 [命令行操作](#💻-命令行操作)
-
-### 源码编译安装
-如需自行编译，请确保已安装Go 1.23+环境：
-```bash
-git clone https://github.com/allinssl/allinssl.git
-cd allinssl
-go mod tidy
-go build -o allinssl cmd/main.go
-./allinssl start
-```
-
-### 首次配置
-1. 访问 `http://your-server-ip:port/安全入口`
-2. 添加DNS提供商和主机提供商凭证 ☁️
-3. 创建工作流
-
-[完整安装文档](https://allinssl.com/guide/getting-started.html)
 
 ## 🎯 核心功能
 
@@ -283,11 +222,7 @@ allinssl 17: 卸载ALLinSSL 🗑️
 ## 📜 许可证
 本项目采用 [AGPL-3.0 license](./LICENSE) 开源协议
 
-## 🌟Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=allinssl/allinssl&type=Date)](https://www.star-history.com/#allinssl/allinssl&Date)
-
----
 
 > 🌟 **Star本项目以支持开发** | 推荐用于：中小型网站运维、多证书管理场景、自动化HTTPS部署
 
