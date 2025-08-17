@@ -4,6 +4,8 @@
 
 此版本为寒语馨修改的UI版本，出问题概不负责
 
+UI并没有放出来是应为，本地环境太乱了，就懒得搞了
+
 如有问题去官方仓库提交https://github.com/allinssl/allinssl
 
 
